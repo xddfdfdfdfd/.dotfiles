@@ -28,6 +28,10 @@
     globals = {
       mapleader = " ";
     };
+    opts = {
+      nu = true;
+      relativenumber = true;
+    };
     keymaps = [
       {
         key = "<Tab>";
