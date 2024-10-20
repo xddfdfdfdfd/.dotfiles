@@ -5,6 +5,7 @@
     ./colorizer.nix
     ./conform.nix
     ./lsp.nix
+    ./lspkind.nix
     ./nord.nix
     ./oil.nix
     ./telescope.nix
