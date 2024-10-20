@@ -28,5 +28,28 @@
     globals = {
       mapleader = " ";
     };
+    keymaps = [
+      {
+        key = "<Tab>";
+        action = "<CMD>:bn<CR>";
+        options = {
+          desc = "Go to next buffer";
+        };
+      }
+      {
+        key = "<S-Tab>";
+        action = "<CMD>:bp<CR>";
+        options = {
+          desc = "Go to previous buffer";
+        };
+      }
+      {
+        key = "<C-q>";
+        action = "<CMD>:bd<CR>";
+        options = {
+          desc = "Close the current buffer";
+        };
+      }
+    ];
   };
 }
