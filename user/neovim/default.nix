@@ -4,6 +4,7 @@
     ./cmp.nix
     ./colorizer.nix
     ./conform.nix
+    ./indent-blankline.nix
     ./lsp.nix
     ./lspkind.nix
     ./neoscroll.nix
