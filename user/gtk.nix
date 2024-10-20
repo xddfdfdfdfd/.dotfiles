@@ -2,6 +2,10 @@
   # Configure GTK
   gtk = {
     enable = true;
+    font = {
+      name = "Inter";
+      package = pkgs.inter;
+    };
     theme = {
       name = "Nordic-bluish-accent";
       package = pkgs.nordic;
