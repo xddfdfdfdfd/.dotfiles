@@ -2,6 +2,7 @@
   imports = [
     ./autopairs.nix
     ./cmp.nix
+    ./colorizer.nix
     ./conform.nix
     ./lsp.nix
     ./nord.nix
