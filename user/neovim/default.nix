@@ -1,6 +1,7 @@
 {
   imports = [
     ./cmp.nix
+    ./conform.nix
     ./lsp.nix
     ./nord.nix
     ./oil.nix
