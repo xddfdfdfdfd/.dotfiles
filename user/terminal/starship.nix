@@ -30,6 +30,9 @@
         untracked = "[ $count](bold yellow) ";
         conflicted = "[󰞇 $count](bold red) ";
       };
+      cmd_duration = {
+        disabled = true;
+      };
     };
   };
 }
