@@ -10,5 +10,10 @@
       name = "Papirus-Dark";
       package = pkgs.papirus-nord.override {accent = "frostblue3";};
     };
+    cursorTheme = {
+      name = "Bibata-Modern-Classic";
+      size = 15;
+      package = pkgs.bibata-cursors;
+    };
   };
 }
