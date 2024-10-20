@@ -6,6 +6,7 @@
     ./conform.nix
     ./lsp.nix
     ./lspkind.nix
+    ./neoscroll.nix
     ./nord.nix
     ./oil.nix
     ./telescope.nix
