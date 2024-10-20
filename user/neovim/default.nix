@@ -6,5 +6,8 @@
     vimAlias = true;
     vimdiffAlias = true;
     defaultEditor = true;
+    globals = {
+      mapleader = " ";
+    };
   };
 }
