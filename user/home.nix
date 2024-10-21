@@ -18,6 +18,7 @@
     ./gammastep.nix
     ./git.nix
     ./gtk.nix
+    ./notifications.nix
     ./ssh.nix
     ./waybar.nix
   ];
