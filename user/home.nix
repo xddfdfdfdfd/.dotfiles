@@ -37,6 +37,7 @@
 
     # Others
     vlc
+    xfce.thunar
   ];
 
   # Let Home Manager install and manage itself
