@@ -71,6 +71,12 @@
         "$modShift, 4, movetoworkspacesilent, 4"
         "$modShift, 5, movetoworkspacesilent, 5"
 
+        # Move focus with $mod + h / j / k / l keys
+        "$mod, h, movefocus, l"
+        "$mod, l, movefocus, r"
+        "$mod, k, movefocus, u"
+        "$mod, j, movefocus, d"
+
         # Scroll through workspaces with $mod + left / right arrow keys
         "$mod, left, workspace, e-1"
         "$mod, right, workspace, e+1"
