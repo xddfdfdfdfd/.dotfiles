@@ -34,6 +34,9 @@
   home.packages = with pkgs; [
     # Socials
     telegram-desktop
+
+    # Others
+    vlc
   ];
 
   # Let Home Manager install and manage itself
