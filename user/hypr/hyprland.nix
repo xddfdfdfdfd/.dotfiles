@@ -9,6 +9,7 @@
       # Exec once on startup
       exec-once = [
         "hyprctl setcursor Bibata-Modern-Classic 15"
+        "waybar"
       ];
 
       # Monitors
