@@ -70,6 +70,10 @@
         "$modShift, 3, movetoworkspacesilent, 3"
         "$modShift, 4, movetoworkspacesilent, 4"
         "$modShift, 5, movetoworkspacesilent, 5"
+
+        # Increase / Decrease volume
+        "$mod, up, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+        "$mod, down, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       ];
 
       # Workspaces
