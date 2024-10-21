@@ -1,10 +1,19 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   # Configure Hyprland
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       "$mod" = "SUPER";
       "$modShift" = "$mod SHIFT";
+
+      # Env
+      env = [
+        "HYPRSHOT_DIR,${config.home.homeDirectory}/Pictures/Screenshots"
+      ];
 
       # Exec once on startup
       exec-once = [
@@ -59,6 +68,10 @@
         # Launch apps
         "$mod, Return, exec, foot"
         "$mod, B, exec, firefox"
+
+        # Screenshot
+        "$mod, p, exec, hyprshot --mode region"
+        "$modShift, p, exec, hyprshot --mode region --clipboard-only"
 
         # Manage active window
         "$mod, Q, killactive,"
@@ -118,5 +131,6 @@
   # Extra packages
   home.packages = with pkgs; [
     bibata-cursors
+    hyprshot
   ];
 }
