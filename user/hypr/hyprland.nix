@@ -1,10 +1,15 @@
-{
+{pkgs, ...}: {
   # Configure Hyprland
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       "$mod" = "SUPER";
       "$modShift" = "$mod SHIFT";
+
+      # Exec once on startup
+      exec-once = [
+        "hyprctl setcursor Bibata-Modern-Classic 15"
+      ];
 
       # Monitors
       monitor = [
@@ -102,4 +107,9 @@
       };
     };
   };
+
+  # Extra packages
+  home.packages = with pkgs; [
+    bibata-cursors
+  ];
 }
