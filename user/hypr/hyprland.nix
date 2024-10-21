@@ -72,6 +72,15 @@
         "$modShift, 5, movetoworkspacesilent, 5"
       ];
 
+      # Workspaces
+      workspace = [
+        "1, persistent:true"
+        "2, persistent:true"
+        "3, persistent:true"
+        "4, persistent:true"
+        "5, persistent:true"
+      ];
+
       # Misc
       misc = {
         force_default_wallpaper = 0;
