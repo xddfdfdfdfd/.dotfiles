@@ -33,6 +33,15 @@
         };
       };
 
+      # Animations
+      animations = {
+        enabled = true;
+        animation = [
+          "global, 1, 3, default"
+          "workspaces, 0, 3, default"
+        ];
+      };
+
       # Dwindle
       dwindle = {
         force_split = 2;
