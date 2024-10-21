@@ -12,6 +12,27 @@
         "HDMI-A-1,1920x1080@75,0x0,1"
       ];
 
+      # General
+      general = {
+        gaps_in = 3;
+        gaps_out = 8;
+        border_size = 2;
+        no_border_on_floating = true;
+        "col.inactive_border" = "rgb(2E3440)";
+        "col.active_border" = "rgb(5e81ac)";
+      };
+
+      # Decorations
+      decoration = {
+        rounding = 3;
+        drop_shadow = false;
+        blur = {
+          enabled = true;
+          xray = true;
+          passes = 2;
+        };
+      };
+
       # Keybindings
       bind = [
         # Launch apps
