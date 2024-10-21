@@ -12,7 +12,7 @@
         margin-left = 8;
         margin-right = 8;
 
-        modules-left = [];
+        modules-left = ["hyprland/workspaces"];
         modules-center = [];
         modules-right = [];
       };
@@ -25,6 +25,22 @@
 
       window#waybar {
         background: transparent;
+      }
+
+      #workspaces button {
+        margin: 0em 0.3em;
+        padding: 0.5em 0.7em;
+        background: #292e39;
+        font-weight: bold;
+      }
+
+      #workspaces button.empty {
+        color: #434c5e
+      }
+
+      #workspaces button.active {
+        color: #292e39;
+        background: #8fbcbb
       }
     '';
   };
