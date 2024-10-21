@@ -1,5 +1,6 @@
 {
   user,
+  pkgs,
   inputs,
   ...
 }: {
@@ -27,6 +28,12 @@
     username = user;
     homeDirectory = "/home/${user}";
   };
+
+  # User packages
+  home.packages = with pkgs; [
+    # Socials
+    telegram-desktop
+  ];
 
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
